@@ -18,7 +18,7 @@ java {
 dependencies {
     implementation(gradleApi())
     implementation(gradleKotlinDsl())
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10")
+    implementation(kotlin("stdlib-jdk8", "1.8.10"))
 }
 
 gradlePlugin {
