@@ -1,3 +1,4 @@
+import com.g.city.version.*
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -5,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.g.city"
-    compileSdk = 34
+    compileSdk = Libs.compileSdk
 
     defaultConfig {
         applicationId = "com.g.city"
