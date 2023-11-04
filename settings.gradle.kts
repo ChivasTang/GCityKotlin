@@ -14,5 +14,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "GCityKotlin"
-rootProject.buildFileName = "build.gradle.kts"
 include(":app")
