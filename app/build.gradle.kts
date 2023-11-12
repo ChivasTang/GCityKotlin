@@ -53,19 +53,16 @@ android {
 }
 
 dependencies {
-    implementation(Dependencies.coreKtx)
-    implementation(Dependencies.lifecycleRuntimeKtx)
-    implementation(Dependencies.activityCompose)
-    implementation(platform(Dependencies.composeBom))
-    implementation(Dependencies.composeUi)
-    implementation(Dependencies.composeUiGraphics)
-    implementation(Dependencies.composeUiToolingPreview)
-    implementation(Dependencies.composeMaterial3)
-    testImplementation(Dependencies.junit4)
-    androidTestImplementation(Dependencies.testExt)
-    androidTestImplementation(Dependencies.testEspresso)
-    androidTestImplementation(platform(Dependencies.composeBom))
-    androidTestImplementation(Dependencies.uiTestJunit4)
-    debugImplementation(Dependencies.uiTooling)
-    debugImplementation(Dependencies.uiTestManifest)
+    implementation(fileTree(Libs.fileTreeMap))
+    implementation(project(Libs.projectLibBase))
+
+    if (!Modules.moduleIsApp) {
+        implementation(project(Libs.projectModuleConstellation))
+        implementation(project(Libs.projectModuleDeveloper))
+        implementation(project(Libs.projectModuleJoke))
+        implementation(project(Libs.projectModuleManager))
+        implementation(project(Libs.projectModuleMap))
+        implementation(project(Libs.projectModuleSetting))
+        implementation(project(Libs.projectModuleWeather))
+    }
 }

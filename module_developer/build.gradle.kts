@@ -35,6 +35,8 @@ android {
 }
 
 dependencies {
+    implementation(fileTree(Libs.fileTreeMap))
+
     implementation(Dependencies.coreKtx)
     implementation(Dependencies.appCompat)
     implementation(Dependencies.material)

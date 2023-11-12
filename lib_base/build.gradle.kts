@@ -35,10 +35,25 @@ android {
 }
 
 dependencies {
-    implementation(Dependencies.coreKtx)
-    implementation(Dependencies.appCompat)
-    implementation(Dependencies.material)
-    testImplementation(Dependencies.junit4)
-    androidTestImplementation(Dependencies.testExt)
-    androidTestImplementation(Dependencies.testEspresso)
+    implementation(fileTree(Libs.fileTreeMap))
+    api(Dependencies.coreKtx)
+    api(Dependencies.appCompat)
+    api(Dependencies.material)
+    api(Dependencies.lifecycleRuntimeKtx)
+    api(Dependencies.activityCompose)
+    api(platform(Dependencies.composeBom))
+    api(Dependencies.composeUi)
+    api(Dependencies.composeUiGraphics)
+    api(Dependencies.composeUiToolingPreview)
+    api(Dependencies.composeMaterial3)
+    testApi(Dependencies.junit4)
+    androidTestApi(Dependencies.testExt)
+    androidTestApi(Dependencies.testEspresso)
+    androidTestApi(platform(Dependencies.composeBom))
+    androidTestApi(Dependencies.uiTestJunit4)
+    debugApi(Dependencies.uiTooling)
+    debugApi(Dependencies.uiTestManifest)
+
+    api(project(Libs.projectLibNetwork))
+    api(project(Libs.projectLibVoice))
 }

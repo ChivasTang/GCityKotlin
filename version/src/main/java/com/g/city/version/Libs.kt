@@ -1,5 +1,7 @@
 package com.g.city.version
 
+import org.gradle.api.file.FileTree
+
 object Libs {
     const val compileSdk = 34
     const val targetSdk = 34
@@ -19,6 +21,8 @@ object Libs {
     const val compose = true
     const val resourcesExcludes = "/META-INF/{AL2.0,LGPL2.1}"
 
+    val fileTreeMap = mapOf("dir" to "libs", "include" to listOf("*.jar"))
+
     // lib
     const val nameSpaceLibBase = "com.g.city.base"
     const val nameSpaceLibNetwork = "com.g.city.network"
@@ -32,5 +36,16 @@ object Libs {
     const val nameSpaceModuleMap = "com.g.city.map"
     const val nameSpaceModuleSetting = "com.g.city.setting"
     const val nameSpaceModuleWeather = "com.g.city.weather"
+
+    const val projectLibBase = ":lib_base"
+    const val projectLibNetwork = ":lib_network"
+    const val projectLibVoice = ":lib_voice"
+    const val projectModuleManager = ":module_manager"
+    const val projectModuleConstellation = ":module_constellation"
+    const val projectModuleDeveloper = ":module_developer"
+    const val projectModuleJoke = ":module_joke"
+    const val projectModuleMap = ":module_map"
+    const val projectModuleSetting = ":module_setting"
+    const val projectModuleWeather = ":module_weather"
 }
 
