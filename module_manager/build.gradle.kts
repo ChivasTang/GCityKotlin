@@ -2,7 +2,7 @@ import com.g.city.version.*
 import com.g.city.version.Dependencies
 
 plugins {
-    id("com.android.library")
+    if(com.g.city.version.Modules.moduleIsApp) id("com.android.application") else id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
 

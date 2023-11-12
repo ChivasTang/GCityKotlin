@@ -3,6 +3,7 @@ package com.g.city.version
 import org.gradle.api.file.FileTree
 
 object Libs {
+
     const val compileSdk = 34
     const val targetSdk = 34
     const val minSdk = 26
@@ -37,6 +38,7 @@ object Libs {
     const val nameSpaceModuleSetting = "com.g.city.setting"
     const val nameSpaceModuleWeather = "com.g.city.weather"
 
+    const val nameSpaceVersion = "version"
     const val projectLibBase = ":lib_base"
     const val projectLibNetwork = ":lib_network"
     const val projectLibVoice = ":lib_voice"
