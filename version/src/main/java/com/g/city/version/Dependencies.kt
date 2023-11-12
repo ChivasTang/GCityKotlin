@@ -8,6 +8,8 @@ object Dependencies {
     private const val junit4Version = "4.13.2"
     private const val testExtJunit = "1.1.5"
     private const val testEspressoCore = "3.5.1"
+    private const val appCompatVersion = "1.6.1"
+    private const val materialVersion = "1.10.0"
 
     const val coreKtx = "androidx.core:core-ktx:$coreKtxVersion"
     const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleRuntimeKtxVersion"
@@ -23,5 +25,9 @@ object Dependencies {
     const val uiTestJunit4 = "androidx.compose.ui:ui-test-junit4"
     const val uiTooling = "androidx.compose.ui:ui-tooling"
     const val uiTestManifest = "androidx.compose.ui:ui-test-manifest"
+
+    // module
+    const val appCompat = "androidx.appcompat:appcompat:$appCompatVersion"
+    const val material="com.google.android.material:material:$materialVersion"
 
 }

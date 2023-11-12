@@ -16,3 +16,6 @@ dependencyResolutionManagement {
 rootProject.name = "GCityKotlin"
 include(":app")
 includeBuild("version")
+include(":lib_base")
+include(":lib_network")
+include(":lib_voice")
