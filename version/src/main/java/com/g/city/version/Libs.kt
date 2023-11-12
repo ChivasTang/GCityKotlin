@@ -25,5 +25,12 @@ object Libs {
     const val nameSpaceLibVoice = "com.g.city.voice"
 
     // module
+    const val nameSpaceModuleConstellation = "com.g.city.constellation"
+    const val nameSpaceModuleDeveloper = "com.g.city.developer"
+    const val nameSpaceModuleJoke = "com.g.city.joke"
+    const val nameSpaceModuleManager = "com.g.city.manager"
+    const val nameSpaceModuleMap = "com.g.city.map"
+    const val nameSpaceModuleSetting = "com.g.city.setting"
+    const val nameSpaceModuleWeather = "com.g.city.weather"
 }
 
